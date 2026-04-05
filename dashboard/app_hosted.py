@@ -292,7 +292,7 @@ Under 150 words."""
 def get_recommendation(finding):
     client = get_anthropic_client()
     message = client.messages.create(
-        model="claude-sonnet-4-5",
+        model="claude-sonnet-4-5-20250929",
         max_tokens=400,
         system=SYSTEM_PROMPT,
         messages=[{"role": "user", "content": f"Finding: {finding}"}]
