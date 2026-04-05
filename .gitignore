@@ -31,3 +31,6 @@ build/
 # Reports
 reports/*.json
 reports/*.pdf
+
+# Streamlit secrets — never commit the real file
+.streamlit/secrets.toml
